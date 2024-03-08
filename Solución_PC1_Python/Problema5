@@ -1,0 +1,7 @@
+#Escribir un programa que solicite al usuario que ingrese cuántos shows
+#musicales ha visto en el último año.
+num_shows = int(input("Shows musicales vistos en este año: "))
+# Determinar si el usuario ha visto más de 3 shows
+ha_visto_mas_de_3_shows = num_shows > 3
+# Mostrar el resultado
+print("Ha visto más de 3 shows:", ha_visto_mas_de_3_shows)

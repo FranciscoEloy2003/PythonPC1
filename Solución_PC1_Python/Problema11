@@ -1,0 +1,8 @@
+#Escriba un programa Python que se encargue de
+#eliminar los elementos duplicados:
+lista_original = [1, 1, 2, 3, 4, 4, 5, 1]
+# Convertir la lista en un conjunto
+conjunto = set(lista_original)
+# Convertir el conjunto de nuevo en una lista
+lista_procesada = list(conjunto)
+print("lista procesada: ",lista_procesada)

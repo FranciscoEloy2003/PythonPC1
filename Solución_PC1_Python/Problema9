@@ -1,0 +1,9 @@
+#Escriba un programa que, dada una lista, devuelve una nueva lista 
+#cuyo contenido sea igual a la original pero invertida.
+def invertir_lista(lista):
+    lista_invertida = lista[::-1]  # Utilizando el slicing para invertir la lista
+    return lista_invertida
+
+lista_original = ['Hola', 'buenos', 'días', 'a', 'todos']
+lista_invertida = invertir_lista(lista_original)
+print(lista_invertida)

@@ -1,0 +1,4 @@
+#Escribir un programa que solicite su nombre de usuario
+Nombre = input("escriba su nombre: ")
+
+print("¡Hola",  Nombre + "!")

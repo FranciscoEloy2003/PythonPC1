@@ -1,0 +1,9 @@
+#Escriba un programa que pregunte al usuario cuánto fue su consumo
+#en el restaurante y que porcentaje de propina desea dejar al mesero.
+Consumo = float(input("¿Cuál es su monto a cancelar?: " + "$"))
+propina = float(input("¿Qué porcentaje de propina desea dejar?: " "%"))
+
+#Calcular el porcentaje a cancelar ( monto inicial * porcentaje ) / 100
+resultado = float(Consumo * propina)/ 100
+
+print(f"El porcentaje de la propina es {resultado}$.")

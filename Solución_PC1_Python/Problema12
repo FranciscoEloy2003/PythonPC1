@@ -1,0 +1,26 @@
+#Implemente un programa que solicite al usuario el nombre de un archivo
+# y luego genere el tipo de archivo MIME correspondiente. 
+def obtener_tipo_mime(nombre_archivo):
+    #Obtener el sufijo del nombre de archivo
+    extension = nombre_archivo.lower().split(".")[-1]
+    # Mapear extensiones a tipos MIME
+    tipos_mime = {
+        'gif': 'image/gif',
+        'jpg': 'image/jpeg',
+        'jpeg': 'image/jpeg',
+        'png': 'image/png',
+        'pdf': 'application/pdf',
+        'txt': 'text/plain',
+        'zip': 'application/zip'
+    }
+
+    # Obtener el tipo MIME correspondiente o application/octet-stream si no se encuentra
+    return tipos_mime.get(extension, 'application/octet-stream')
+
+# Solicitar al usuario el nombre del archivo
+nombre_archivo = input("Ingrese el nombre del archivo: ")
+
+# Obtener el tipo MIME correspondiente
+tipo_mime = obtener_tipo_mime(nombre_archivo)
+
+print("Tipo de archivo MIME:", tipo_mime)

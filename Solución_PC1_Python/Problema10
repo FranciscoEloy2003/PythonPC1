@@ -1,0 +1,7 @@
+#Escriba un programa para imprimir una lista específica después de 
+# eliminar los elementos que se encuentran en la posición 0, 4 y 5.
+mascotas = ['Perros', 'Gatos', 'Conejos', 'Pájaros', 'Hamsters', 'Tortugas']
+indices_a_eliminar = [0, 4, 5]
+#Resultado esperado:
+nueva_lista = [mascota for indice, mascota in enumerate(mascotas) if indice not in indices_a_eliminar]
+print(nueva_lista)

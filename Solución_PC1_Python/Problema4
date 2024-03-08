@@ -1,0 +1,8 @@
+#Escribir un programa que lea un entero positivo, N, introducido
+#por el usuario
+N = float(input("Ingrese un número: "))
+if N > 0:
+    suma_de_enteros = float(N * (N + 1)) / 2
+    print("la suma de los números, convertidos a enteros es: ", int(suma_de_enteros))
+#Nota: si el usuario da un número decimal, al ejecutar el código se 
+# redondea al entero más cercano.

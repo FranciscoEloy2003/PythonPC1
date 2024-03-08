@@ -1,0 +1,7 @@
+# Solicitar al usuario que ingrese el número de payasos y muñecas vendidos
+payasos_vendidos = int(input("Ingrese el número de payasos vendidos: "))
+muñecas_vendidas = int(input("Ingrese el número de muñecas vendidas: "))
+# Calcular el peso total del paquete
+peso_total = int((payasos_vendidos * 112) + (muñecas_vendidas * 75))
+# Mostrar el resultado
+print("El peso total del paquete usando la función es:",peso_total, "g")

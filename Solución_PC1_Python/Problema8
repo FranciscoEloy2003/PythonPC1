@@ -1,0 +1,18 @@
+def determinar_hora_comida(hora):
+    if 7 <= hora <= 8:
+        return "desayunar"
+    elif 12 <= hora <= 13:
+        return "almorzar"
+    elif 18 <= hora <= 19:
+        return "cenar"
+    else:
+        return None
+# Solicitar al usuario que ingrese una hora en formato de 24 horas
+hora = int(input("Ingrese una hora en formato de 24 horas (HH:MM o HH:MM): "))
+    # Determinar si es la hora de desayunar, almorzar o cenar
+hora_comida = determinar_hora_comida(hora)
+# Mostrar el resultado
+if hora_comida is not None:
+    print("Es hora de", hora_comida)
+else:
+    print("No es hora de comer.")
